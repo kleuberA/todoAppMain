@@ -1,0 +1,153 @@
+body{
+    overflow: hidden;
+}
+.containerPrincipal{
+    background: url(images/bg-desktop-dark.jpg),hsl(235, 21%, 11%);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerTodo{
+	width: 50%;
+}
+.containerTodoHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+.containerInputTodo{
+    background: hsl(235, 24%, 19%);
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    padding: 0 2vh;
+    box-shadow: 0px 0px 26px 5px rgb(0 0 0 / 50%);
+}
+
+.rounded-corners-gradient-borders,.rounded-corners-gradient-borders-input {
+    width: 25px;
+    height: 25px;
+    border: double 1px grey;
+    border-radius: 80px;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.rounded-corners-gradient-borders:hover,.rounded-corners-gradient-borders-input:hover {
+  width: 25px;
+  height: 25px;
+  border: double 1px transparent;
+  border-radius: 80px;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-image: linear-gradient(hsl(235, 24%, 19%), hsl(235, 24%, 19%)), linear-gradient(hsl(192, 100%, 67%) 0%, hsl(280, 87%, 65%) 50%);
+}
+.rounded-corners-gradient-borders-check{
+    background: url(images/icon-check.svg), linear-gradient(hsl(192, 100%, 67%) 0%, hsl(280, 87%, 65%) 50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 80px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.newTodo{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: hsl(234, 39%, 85%);
+    width: 450px;
+}
+.iconThemeMode{
+    cursor: pointer;
+}
+.containerTodoListFooter{
+    display: flex;
+    height: 5vh;
+    flex-direction: row;
+    justify-content: space-between;
+    background: hsl(235, 24%, 19%);
+}
+.countItems{
+    display: flex;
+    margin-right: 5px;
+}
+.optionTodo{
+    display: flex;
+}
+.changeAll,.changeActive,.changeCompleted {
+	margin-right: 20px;
+	cursor: pointer;
+    color: hsl(234, 11%, 52%);
+    font-weight: 300;
+    font-size: 13px;
+}
+.optionTodo p:hover{
+    color: hsl(236, 33%, 92%);
+}
+.active{
+    color: hsl(220, 98%, 61%);
+}
+.containerTodoList{
+    margin-top: 10px;
+    background: hsl(235, 24%, 19%);
+    height: calc(100vh - 250px);
+    overflow: auto;
+}
+.containerTodoList::-webkit-scrollbar {
+  width: 12px;     
+}
+.containerTodoList::-webkit-scrollbar-track {
+  background: hsl(235, 24%, 19%); 
+}
+.containerTodoList::-webkit-scrollbar-thumb {
+    background-color: hsl(220, 98%, 61%);
+    border-radius: 20px;
+    border: 3px solid hsl(220, 98%, 61%);
+}
+.itemCreate,.completed{
+    display: flex;
+    color: white;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    padding: 0 2vh;
+    word-break: break-word;
+}
+.changeClear{
+    color: hsl(234, 11%, 52%);
+    font-weight: 300;
+    font-size: 13px;
+    padding: 0 2vh;
+    cursor: pointer;
+}
+.changeClear:hover{
+    color: hsl(236, 33%, 92%);
+}
+.textItem{
+    width: 600px;
+    text-transform: capitalize;
+}
+.deleteItem{
+    background: url(images/icon-cross.svg);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    margin-left: 25px;
+}
+.quantItems{
+    color: hsl(234, 11%, 52%);
+    font-weight: 300;
+    font-size: 13px;
+    margin: 0 2vh;
+}
+hr{
+    color: hsl(0, 0%, 98%);
+}
